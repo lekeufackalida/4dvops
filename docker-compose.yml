@@ -1,0 +1,15 @@
+version: "3"
+services:
+   4dvop_web:
+     image: php:7.0-apache
+     ports:
+       - 80:80
+     volumes:
+       - ./website:/var/www/html
+
+   4dvop_flask:
+     build: 
+       context: .
+       dockerfile: ./simple_api/Dockerfile
+     ports:
+       - 5000:5000
