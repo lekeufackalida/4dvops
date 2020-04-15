@@ -6,7 +6,7 @@ from flask import request
 from flask import url_for
 from flask_httpauth import HTTPBasicAuth
 from flask import g, session, redirect, url_for
-from flask_simpleldap import LDAP
+#from flask_simpleldap import LDAP
 import json
 import os
 
